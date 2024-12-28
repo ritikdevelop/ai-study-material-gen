@@ -1,11 +1,12 @@
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import { UserButton } from "@clerk/nextjs";
+import react from "react";
 
 export default function Home() {
   return (
     <div>
-      <h2>Hello, World!</h2>
-      <Button>Click Me</Button>
+      <h2>Hello, world!</h2>
+      <button>Click me</button>
+      <UserButton />
     </div>
   );
 }
