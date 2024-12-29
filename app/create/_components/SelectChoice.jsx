@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 
-function SelectChoice() {
+function SelectChoice({ selectedStudyType }) {
   const Options = [
     {
       name: "Exam",
@@ -35,8 +35,13 @@ function SelectChoice() {
         {Options.map((option, index) => (
           <div
             key={index}
-            className={`p-4 flex flex-col items-center justify-center border rounded-xl hover:border-primary cursor-pointer ${option?.name == selectedOption && "border-primary"}`}
-            onClick={() => setSelectedOption(option.name)}
+            className={`p-4 flex flex-col items-center justify-center border rounded-xl hover:border-primary cursor-pointer ${
+              option?.name == selectedOption && "border-primary"
+            }`}
+            onClick={() => {
+              setSelectedOption(option.name);
+              selectedStudyType(option.name);
+            }}
           >
             <Image src={option.icon} alt={option.name} width={50} height={50} />
             <h2 className="text-sm mt-2">{Options.name}</h2>
