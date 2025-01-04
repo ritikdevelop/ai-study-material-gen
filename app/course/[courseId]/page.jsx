@@ -26,14 +26,14 @@ function Course() {
     <div>
       <DashboardHeader />
       <div className="mx-10 md:mx-36 lg:px-60 mt-10">
-      {/* Course Intro Section  */}
-      <CourseIntro course={course} />
+        {/* Course Intro Section  */}
+        <CourseIntro course={course} />
 
-      {/* Stud Material Options */}
-      <StudyMaterialSection courseId={courseId} />
+        {/* Stud Material Options */}
+        <StudyMaterialSection courseId={courseId} />
 
-      {/* Chapter List  */}
-      <ChapterList course={course} />
+        {/* Chapter List  */}
+        <ChapterList course={course} />
       </div>
     </div>
   );
