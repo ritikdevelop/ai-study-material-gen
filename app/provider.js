@@ -34,15 +34,12 @@ function Provider({ children }) {
     //     .returning({ id: USER_TABLE.id });
 
     //   console.log(userResp);
-    const resp = await axios.post('/api/create-user', {user:user});
+    const resp = await axios.post("/api/create-user", { user: user });
     console.log(resp.data);
-  }
+  };
 
-    //! If user is new then show the onboarding screen to the user
-    return <div>{children}</div>;
-};
-
-  
-
+  //! If user is new then show the onboarding screen to the user
+  return <div>{children}</div>;
+}
 
 export default Provider;
