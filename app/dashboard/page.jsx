@@ -1,8 +1,8 @@
 "use client";
 
-import React from 'react'
-import WelcomeBanner from './_components/WelcomeBanner'
-import CourseList from './_components/CourseList';
+import React from "react";
+import WelcomeBanner from "./_components/WelcomeBanner";
+import CourseList from "./_components/CourseList";
 
 function Dashboard() {
   return (
@@ -11,7 +11,7 @@ function Dashboard() {
 
       <CourseList />
     </div>
-  )
+  );
 }
 
-export default Dashboard
+export default Dashboard;
