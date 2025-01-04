@@ -17,7 +17,6 @@ function Create() {
   const { user } = useUser();
   const [loading, setLoading] = useState(false);
 
-
   const router = useRouter();
 
   const handleUserInput = (fieldName, fieldValue) => {
@@ -41,7 +40,9 @@ function Create() {
     setLoading(false);
     router.replace(`/dashboard`);
     //! Toast notification to show success
-    toast("Your course content is generating, Click on Refresh button to see the progress");
+    toast(
+      "Your course content is generating, Click on Refresh button to see the progress"
+    );
     console.log(result.data.result.resp);
   };
   return (
