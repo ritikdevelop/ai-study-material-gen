@@ -29,6 +29,7 @@ function Create() {
   };
 
   const GenerateCourseOutline = async () => {
+    
     //! logic to generate course outline based on user input
     const courseId = uuidv4();
     setLoading(true);
